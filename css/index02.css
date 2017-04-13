@@ -1,0 +1,131 @@
+body,html{
+    width:100%;
+    height:100%;
+    margin :0;
+    padding:0;
+}
+body{
+    background-color: rgb(96,96,96);
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+/*-----------------------------------------页面内容------------------------------------------------*/
+.slider1_pic1{
+    width: 30%;
+    height: 20%;
+    margin: 20%;
+    /*-webkit-animation: ani_slider1_pic1 1s linear 2 1.5s;*/
+    /*-moz-animation:  ani_slider1_pic1 1s linear 2 1.5s;*/
+    /*-ms-animation:  ani_slider1_pic1 1s linear 2 1.5s;*/
+    /*-o-animation:  ani_slider1_pic1 1s linear 2 1.5s;*/
+    /*animation: ani_slider1_pic1 1s linear 2 1.5s;*/
+}
+/*==========================================换页按钮=========================================================*/
+@-webkit-keyframes statr {
+    from{
+        transform: translateY(0px);
+    }to
+     {
+         transform: translateY(10px);
+     }
+}
+@keyframes start {
+    from{
+        transform: translateY(0px);
+    }to
+     {
+         transform: translateY(10px);
+     }
+}
+.cut_btn{
+    position:absolute;
+    left:45%;
+    top:80%;
+    width:11%;
+    height:4%;
+    background:url(../img/sanjiao2.png)no-repeat 0 0 ;
+    animation: start 1.5s  linear 0s infinite ;
+    z-index :1000000;
+    overflow:hidden;
+}
+/*=============================================音乐部分================================================*/
+@-webkit-keyframes music {
+    from {
+        transform: rotate(0deg);
+    }to
+     {
+         transform: rotate(360deg);
+     }
+}
+@keyframes music {
+    from{
+        transform: rotate(0deg);
+    }to
+     {
+         transform: rotate(360deg);
+     }
+}
+#btn{
+    width:24px;
+    height:24px;
+    background:url(../img/music.jpg) no-repeat -187px -360px ;
+    border-radius:50%;
+    border:1px solid black;
+    position:absolute;
+    top:2%;
+    right:5%;
+    animation:music 2s linear 0s infinite;
+    -webkit-animation:music 2s linear 0s infinite;
+    z-index:1000;
+}
+/*!*----------------------------------------底部(模板-音乐-相册-保存)---------------------------------------*!*/
+#footer_box{
+    width:100%;
+    height:10%;
+    position:fixed;
+    left:0;
+    bottom:0;
+    z-index:1000;
+    background:orange;
+    margin:0 auto;
+    display:-webkit-box;
+}
+a{
+    text-decoration: none;
+    border-radius:25%;
+    /*line-height:50%;*/
+    text-align:center;
+    color:#ccc;
+    font-size:13px;
+    background:rgba(0,0,0,0.5);
+    margin:5%;
+    padding:2%;
+    display:inline-block;
+    /*-webkit-box-flex:1;*/
+
+}
+a:nth-child(1){
+    -webkit-box-flex:1;
+}
+a:nth-child(2){
+    -webkit-box-flex:2;
+}
+a:nth-child(3){
+    -webkit-box-flex:3;
+}
+a:nth-child(4){
+    -webkit-box-flex:4;
+}
+
+
+
+
+
+
+
+
+
+
+
